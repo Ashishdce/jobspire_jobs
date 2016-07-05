@@ -1,0 +1,16 @@
+//function in c++
+//use headerfile  <string>, <cstdlib>
+
+string name_num(string *name)
+{
+   
+   int rand = random()%8 + 7; //generate random number in range (6,15) i.e,[7,14]
+    
+   string num = to_string(rand);  // convert string to integer
+   
+   if(!name.length())  //an empty string
+        return (""" + num + """) ; //return the resultant string
+   else
+        return (""" + name + " " + num + """) ; //return the resultant string
+}
+//function ends
